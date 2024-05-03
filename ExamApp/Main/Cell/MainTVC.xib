@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="MainTVC" customModule="ExamApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeS-QB-A8u">
+                        <rect key="frame" x="10" y="10" width="452" height="120.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oew-h7-amz">
+                                <rect key="frame" x="8" y="8" width="104.5" height="104.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oew-h7-amz" secondAttribute="height" multiplier="1:1" id="zfH-GD-0w2"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ii-my-tzm">
+                                <rect key="frame" x="120.5" y="8" width="323.5" height="104.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VRm-PH-Tu7">
+                                        <rect key="frame" x="0.0" y="10" width="323.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="After Job Cuts, Microsoft to stop increments this year" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-Kz-wfh">
+                                        <rect key="frame" x="0.0" y="34.5" width="323.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min read . May 11, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgv-Fd-BkS">
+                                        <rect key="frame" x="0.0" y="80.5" width="265" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeR-ji-bMD">
+                                        <rect key="frame" x="299.5" y="80.5" width="14" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oeR-ji-bMD" secondAttribute="height" multiplier="1:1" id="ofh-bg-j2F"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="share-icon">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
+                                        </state>
+                                        <state key="selected" image="bookmark.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="shareButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FwZ-dD-2hO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhU-Ra-h9q">
+                                        <rect key="frame" x="275" y="80.5" width="14.5" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bhU-Ra-h9q" secondAttribute="height" multiplier="1:1" id="C4K-UF-sWi"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="bookmark" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="regular"/>
+                                        </state>
+                                        <state key="selected" image="bookmark.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnBookmarkClickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VTt-gB-Ff6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="oeR-ji-bMD" firstAttribute="bottom" secondItem="Pgv-Fd-BkS" secondAttribute="bottom" id="1tl-su-sqK"/>
+                                    <constraint firstItem="bhU-Ra-h9q" firstAttribute="bottom" secondItem="Pgv-Fd-BkS" secondAttribute="bottom" id="Civ-tp-KcT"/>
+                                    <constraint firstItem="bhU-Ra-h9q" firstAttribute="top" secondItem="Pgv-Fd-BkS" secondAttribute="top" id="FRb-vp-ash"/>
+                                    <constraint firstItem="Pgv-Fd-BkS" firstAttribute="top" secondItem="hBw-Kz-wfh" secondAttribute="bottom" constant="5" id="G8R-fF-dBg"/>
+                                    <constraint firstItem="VRm-PH-Tu7" firstAttribute="top" secondItem="9ii-my-tzm" secondAttribute="top" constant="10" id="JAf-81-kwc"/>
+                                    <constraint firstItem="oeR-ji-bMD" firstAttribute="top" secondItem="Pgv-Fd-BkS" secondAttribute="top" id="KfC-rs-KpH"/>
+                                    <constraint firstItem="bhU-Ra-h9q" firstAttribute="leading" secondItem="Pgv-Fd-BkS" secondAttribute="trailing" constant="10" id="NxI-lD-V65"/>
+                                    <constraint firstAttribute="trailing" secondItem="oeR-ji-bMD" secondAttribute="trailing" constant="10" id="W8K-uC-I2M"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pgv-Fd-BkS" secondAttribute="bottom" constant="10" id="ZUx-SO-Omf"/>
+                                    <constraint firstItem="hBw-Kz-wfh" firstAttribute="top" secondItem="VRm-PH-Tu7" secondAttribute="bottom" constant="5" id="f7p-hO-K2G"/>
+                                    <constraint firstItem="Pgv-Fd-BkS" firstAttribute="leading" secondItem="VRm-PH-Tu7" secondAttribute="leading" id="i43-vJ-pmg"/>
+                                    <constraint firstItem="hBw-Kz-wfh" firstAttribute="leading" secondItem="VRm-PH-Tu7" secondAttribute="leading" id="nDV-1d-4wc"/>
+                                    <constraint firstItem="VRm-PH-Tu7" firstAttribute="leading" secondItem="9ii-my-tzm" secondAttribute="leading" id="naj-Cc-U4r"/>
+                                    <constraint firstAttribute="trailing" secondItem="VRm-PH-Tu7" secondAttribute="trailing" id="pKc-FY-oz0"/>
+                                    <constraint firstItem="oeR-ji-bMD" firstAttribute="leading" secondItem="bhU-Ra-h9q" secondAttribute="trailing" constant="10" id="vWF-LX-oLc"/>
+                                    <constraint firstItem="hBw-Kz-wfh" firstAttribute="trailing" secondItem="VRm-PH-Tu7" secondAttribute="trailing" id="x5d-Cv-e7m"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9ii-my-tzm" secondAttribute="bottom" constant="8" id="Des-30-8ai"/>
+                            <constraint firstItem="9ii-my-tzm" firstAttribute="leading" secondItem="oew-h7-amz" secondAttribute="trailing" constant="8" id="J4F-bB-gQ4"/>
+                            <constraint firstItem="oew-h7-amz" firstAttribute="leading" secondItem="FeS-QB-A8u" secondAttribute="leading" constant="8" id="L48-9m-maK"/>
+                            <constraint firstAttribute="bottom" secondItem="oew-h7-amz" secondAttribute="bottom" constant="8" id="SOs-xa-mlc"/>
+                            <constraint firstItem="oew-h7-amz" firstAttribute="top" secondItem="FeS-QB-A8u" secondAttribute="top" constant="8" id="gJ9-U0-MDR"/>
+                            <constraint firstAttribute="trailing" secondItem="9ii-my-tzm" secondAttribute="trailing" constant="8" id="mdx-MC-NAT"/>
+                            <constraint firstItem="9ii-my-tzm" firstAttribute="top" secondItem="FeS-QB-A8u" secondAttribute="top" constant="8" id="qTi-yR-KmE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FeS-QB-A8u" secondAttribute="bottom" constant="5" id="HOP-fo-ZpX"/>
+                    <constraint firstAttribute="trailing" secondItem="FeS-QB-A8u" secondAttribute="trailing" constant="10" id="MIR-nd-kur"/>
+                    <constraint firstItem="FeS-QB-A8u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MdW-dg-FkE"/>
+                    <constraint firstItem="FeS-QB-A8u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Pj9-HL-1PR"/>
+                    <constraint firstItem="oew-h7-amz" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="Wfr-nM-7yn"/>
+                    <constraint firstItem="oeR-ji-bMD" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.03" id="uDs-c5-DtS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnBookmark" destination="bhU-Ra-h9q" id="1dN-6r-X1p"/>
+                <outlet property="btnShare" destination="oeR-ji-bMD" id="TVe-ux-jx9"/>
+                <outlet property="imgNews" destination="oew-h7-amz" id="h27-rT-Qx6"/>
+                <outlet property="lblCategory" destination="VRm-PH-Tu7" id="ZnH-eP-HDK"/>
+                <outlet property="lblHeadline" destination="hBw-Kz-wfh" id="fIk-Nb-CQM"/>
+                <outlet property="lblTimeAndDate" destination="Pgv-Fd-BkS" id="JrS-xw-aMC"/>
+                <outlet property="viewContainer" destination="FeS-QB-A8u" id="0KT-yr-nNU"/>
+            </connections>
+            <point key="canvasLocation" x="250.72463768115944" y="176.45089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="bookmark.fill" catalog="system" width="112" height="128"/>
+        <image name="share-icon" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
